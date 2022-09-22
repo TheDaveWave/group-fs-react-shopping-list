@@ -33,11 +33,11 @@ function ProductForm ({getProducts}) {
     return(
         <>
             <form onSubmit={addProduct}>
-                <label for='nameIn'>Product Name:</label>
-                <input id='nameIn' value={name} onChange = {event => setName(event.target.value)}/>
-                <label for="quantityIn">Quantity:</label>
+                <label htmlFor="nameIn">Product Name:</label>
+                <input id="nameIn" value={name} onChange = {event => setName(event.target.value)}/>
+                <label htmlFor="quantityIn">Quantity:</label>
                 <input id="quantityIn" value={quantity} onChange ={ event => setQuantity(event.target.value)}/>
-                <label for="unitIn">Unit:</label>
+                <label htmlFor="unitIn">Unit:</label>
                 <input id="unitIn" value={unit} onChange={event => setUnit(event.target.value)}/>
                 <button >Add Product</button>
             </form>
