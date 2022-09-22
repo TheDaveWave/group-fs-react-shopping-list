@@ -11,3 +11,5 @@ CREATE TABLE "products" (
 
 INSERT INTO "products" ("name", "quantity", "unit")
 VALUES ('apples', '2', 'lbs'), ('bread', '1', 'loaf'), ('milk', '3', 'gallon');
+
+SELECT * FROM "products";
