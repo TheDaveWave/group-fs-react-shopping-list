@@ -8,6 +8,7 @@ import './App.css';
 function App() {
     const [productList, setProductList] = useState([]);
 
+    // GET request to retrieve the products in our database.
     const getProducts = () => {
         console.log('In axios GET');
         axios.get('/products')
@@ -19,6 +20,13 @@ function App() {
             console.log('error in axios GET',err);
         });
     }
+
+    console.log(productList);
+
+    // call getProducts once on load.
+    useEffect(() => {
+        getProducts();
+    }, []);
 
     return (
         <div className="App">
