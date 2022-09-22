@@ -4,6 +4,7 @@ import {useState, useEffect} from 'react';
 import Header from '../Header/Header.jsx'
 import './App.css';
 import ProductList from '../ProductList/ProductList.jsx';
+import ProductForm from '../ProductForm/ProductForm.jsx';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
     return (
         <div className="App">
             <Header />
+            <ProductForm/>
             <main>
                 <p>Under Construction...</p>
             </main>
