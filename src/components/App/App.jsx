@@ -14,7 +14,7 @@ function App() {
         console.log('In axios GET');
         axios.get('/products')
         .then(response => {
-            console.log(response.data)
+            console.log(response.data);
             setProductList(response.data);
         })
         .catch(err => {
