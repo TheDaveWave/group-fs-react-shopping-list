@@ -3,6 +3,7 @@ import axios from 'axios';
 import {useState, useEffect} from 'react';
 import Header from '../Header/Header.jsx'
 import './App.css';
+import ProductList from '../ProductList/ProductList.jsx';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
             <main>
                 <p>Under Construction...</p>
             </main>
+            <ProductList productList={productList} getProducts={getProducts}/>
         </div>
     );
 }

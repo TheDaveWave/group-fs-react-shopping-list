@@ -1,6 +1,6 @@
-function ProductListItem() {
+function ProductListItem({product}) {
     return (
-        <p>Product</p>
+        <p>{product.name}</p>
     );
 }
 
