@@ -6,6 +6,8 @@ import './App.css';
 
 
 function App() {
+    const [productList, setProductList] = useState([]);
+
     return (
         <div className="App">
             <Header />
