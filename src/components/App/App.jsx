@@ -9,10 +9,15 @@ function App() {
     const [productList, setProductList] = useState([]);
 
     const getProducts = () => {
+        console.log('In axios GET');
         axios.get('/products')
         .then(response => {
+            console.log(response.data)
             setProductList(response.data);
         })
+        .catch(err => {
+            console.log('error in axios GET',err);
+        });
     }
 
     return (
