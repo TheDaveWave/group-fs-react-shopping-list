@@ -35,9 +35,6 @@ function App() {
         <div className="App">
             <Header />
             <ProductForm/>
-            <main>
-                <p>Under Construction...</p>
-            </main>
             <ProductList productList={productList} getProducts={getProducts}/>
         </div>
     );
