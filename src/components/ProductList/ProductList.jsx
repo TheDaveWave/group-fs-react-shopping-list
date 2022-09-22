@@ -32,7 +32,7 @@ function ProductList ({productList, getProducts}) {
             <button onClick={() => resetPurchased()}>Reset</button>
             <button onClick={() => clearList()}>Clear</button>
             {productList.map( product => (
-                <ProductListItem product={product}/>
+                <ProductListItem key={product.id} product={product}/>
             ))}
         </>
     );

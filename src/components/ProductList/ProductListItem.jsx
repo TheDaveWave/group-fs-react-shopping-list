@@ -1,6 +1,9 @@
 function ProductListItem({product}) {
     return (
-        <p>{product.name}</p>
+        <div>
+            <p>{product.name}</p>
+            <p>{product.isPurchased}</p>
+        </div>
     );
 }
 
