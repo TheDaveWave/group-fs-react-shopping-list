@@ -35,6 +35,21 @@ router.delete('/clear', (req,res) => {
 // DELETE route /products/remove/:id
 
 // PUT route /products/reset
+router.put('/reset', (req,res) => {
+    console.log('In router PUT for reset');
+    // reset the isPurchased values equal to false.
+    const queryText = `UPDATE "products" SET "isPurchased"='false';`;
+
+    pool.query(queryText)
+    .then(()=>{
+        console.log('isPurchased has been reset');
+        res.sendStatus(201);
+    })
+    .catch(err => {
+        console.log('Error in resetting isPurchased', err);
+        res.sendStatus(500);
+    })
+})
 
 // PUT route /products/purchase/:id
 
