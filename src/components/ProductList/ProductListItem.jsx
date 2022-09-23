@@ -15,6 +15,20 @@ function ProductListItem({product, getProducts}) {
         });
     }
 
+    const removeProduct = (productId) => {
+        console.log('removing product', productId);
+        axios({
+            method: 'DELETE',
+            url: `/products/remove/${productId}`
+        })
+        .then(() => {
+            getProducts();
+        })
+        .catch(err => {
+            console.log('Error in removing', err);
+        });
+    }
+
     return (
         <div>
             <p>{product.name}</p>
@@ -23,7 +37,7 @@ function ProductListItem({product, getProducts}) {
             <div>Purchased</div> : 
             <div>
                 <button onClick={() => buyProduct(product.id)}>Buy</button>
-                <button>Remove</button>
+                <button onClick={() => removeProduct(product.id)}>Remove</button>
             </div>}
         </div>
     );
