@@ -29,9 +29,11 @@ function ProductList ({productList, getProducts}) {
 
     return (
         <>
-            <h2>Shopping List</h2>
-            <button onClick={() => resetPurchased()}>Reset</button>
-            <button onClick={() => clearList()}>Clear</button>
+            <div className="list-header">
+                <h2>Shopping List</h2>
+                <button onClick={() => resetPurchased()}>Reset</button>
+                <button onClick={() => clearList()}>Clear</button>
+            </div>
             <div className="item-container">
                 {productList.map( product => (
                     <ProductListItem 

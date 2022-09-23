@@ -1,5 +1,13 @@
+.list-header{
+    text-align: center;
+    padding: 1em 0;
+}
+
 .item-container{
+    width: 90vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
