@@ -1,5 +1,6 @@
 import axios from "axios";
 import ProductListItem from "./ProductListItem";
+import './ProductList.css'
 
 function ProductList ({productList, getProducts}) {
     // clear product list.
@@ -31,13 +32,15 @@ function ProductList ({productList, getProducts}) {
             <h2>Shopping List</h2>
             <button onClick={() => resetPurchased()}>Reset</button>
             <button onClick={() => clearList()}>Clear</button>
-            {productList.map( product => (
-                <ProductListItem 
-                    key={product.id} 
-                    product={product}
-                    getProducts={getProducts}
-                />
-            ))}
+            <div className="item-container">
+                {productList.map( product => (
+                    <ProductListItem 
+                        key={product.id} 
+                        product={product}
+                        getProducts={getProducts}
+                    />
+                ))}
+            </div>
         </>
     );
 }

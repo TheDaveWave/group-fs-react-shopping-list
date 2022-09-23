@@ -23,7 +23,7 @@ router.post('/', (req, res) => {
 // GET route /products
 router.get('/', (req,res) => {
     console.log('In router get /products');
-    const queryText = `SELECT * FROM "products" ORDER BY "id";`;
+    const queryText = `SELECT * FROM "products" ORDER BY "isPurchased", "id";`;
 
     pool.query(queryText)
     .then((result) => {

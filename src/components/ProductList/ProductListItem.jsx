@@ -1,4 +1,6 @@
 import axios from "axios";
+import { css } from "jquery";
+import './ProductListItem.css'
 function ProductListItem({product, getProducts}) {
 
     const buyProduct = (productId) => {
@@ -30,14 +32,14 @@ function ProductListItem({product, getProducts}) {
     }
 
     return (
-        <div>
+        <div className={product.isPurchased ? 'bought-box' : 'item-box'}>
             <p>{product.name}</p>
             <p>{product.quantity} {product.unit}</p>
             {product.isPurchased ? 
             <div>Purchased</div> : 
-            <div>
-                <button onClick={() => buyProduct(product.id)}>Buy</button>
-                <button onClick={() => removeProduct(product.id)}>Remove</button>
+            <div className="btn-box">
+                <button className="list-btn" onClick={() => buyProduct(product.id)}>{'\u2713'}</button>
+                <button className="list-btn" onClick={() => removeProduct(product.id)}>X</button>
             </div>}
         </div>
     );
