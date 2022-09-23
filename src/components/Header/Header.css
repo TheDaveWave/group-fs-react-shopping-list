@@ -1,5 +1,49 @@
+
 .banner-header {
-  background-color: silver;
-  text-align: center;
+  display: inline-block;
+ 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  background-color: rgb(27, 69, 183);
+  text-align: left;
   padding: 0.25em;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h1{
+  margin: -.16em;
+  color: white;
+}
+
+#tagHolder{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+}
+
+#tag{
+  width: 20px;
+  height: 1em;
+  background-color: #FFDE3F;
+  font-size: x-small;
+  border-radius: 1em 0em 0em 1em;
+}
+
+header{
+  text-align: center;
+  border-bottom: solid white 1px;
+}
+
+#buyStuff{
+  width: 8em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: 10px;
 }

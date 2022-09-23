@@ -1,0 +1,37 @@
+
+#productForm{
+    display: inline-block;
+ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:lighter;
+    font-size: small;
+    background-color: rgb(27, 69, 183);
+    color: white;
+    text-align: left;
+    padding: 0.25em;
+
+    
+
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+form{
+    width: 500px;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input{
+    margin: 5px 15px 5px 0px;
+    border-radius: .2em;
+    border: none;
+    height: 1.5em;
+}

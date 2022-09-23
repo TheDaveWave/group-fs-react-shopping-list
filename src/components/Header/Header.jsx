@@ -4,7 +4,9 @@ import './Header.css';
 function Header() {
     return (
         <header className="banner-header">
-            <h1>My Shopping List</h1>
+            <div id="buyStuff">
+                <h1>BUY </h1><div id="tagHolder"><div id="tag">$</div></div><h1>STUFF</h1>
+            </div>
         </header>
     );
 }
