@@ -1,10 +1,10 @@
 .item-box {
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 5%;
 
     margin: 5px;
-    height: 120px;
-    width: 125px;
+    min-height: 120px;
+    min-width: 125px;
     max-width: 130px;
 
     text-align: center;
@@ -12,4 +12,11 @@
 
 .item-box:hover {
     transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 2px 0 grey;
+}
+
+.list-btn {
+    width: 26px;
+    height: 22px;
+    margin: 0 5px;
 }

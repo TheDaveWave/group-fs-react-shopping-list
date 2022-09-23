@@ -37,8 +37,8 @@ function ProductListItem({product, getProducts}) {
             {product.isPurchased ? 
             <div>Purchased</div> : 
             <div>
-                <button onClick={() => buyProduct(product.id)}>Buy</button>
-                <button onClick={() => removeProduct(product.id)}>Remove</button>
+                <button className="list-btn" onClick={() => buyProduct(product.id)}>{'\u2713'}</button>
+                <button className="list-btn" onClick={() => removeProduct(product.id)}>X</button>
             </div>}
         </div>
     );
