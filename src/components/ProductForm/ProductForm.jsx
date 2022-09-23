@@ -37,7 +37,7 @@ function ProductForm ({getProducts}) {
             <div id="productForm">
                 <form onSubmit={addProduct}>
                     <label htmlFor="nameIn">Product Name:</label>
-                    <input placeholder ="Oreos" id="nameIn" type ="text" value={name} onChange = {event => setName(event.target.value)} required/>
+                    <input placeholder ="" id="nameIn" type ="text" value={name} onChange = {event => setName(event.target.value)} required/>
                     <label htmlFor="quantityIn">Quantity:</label>
                     <input placeholder="15" id="quantityIn" value={quantity} type="number" onChange ={ event => setQuantity(event.target.value)}/>
                     <label htmlFor="unitIn">Unit:</label>
