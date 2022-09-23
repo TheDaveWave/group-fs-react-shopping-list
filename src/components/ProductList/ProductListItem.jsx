@@ -1,5 +1,4 @@
 import axios from "axios";
-import { css } from "jquery";
 import './ProductListItem.css'
 function ProductListItem({product, getProducts}) {
 

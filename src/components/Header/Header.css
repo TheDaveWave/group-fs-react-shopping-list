@@ -29,8 +29,9 @@ h1{
   width: 20px;
   height: 1em;
   background-color: #FFDE3F;
-  font-size: x-small;
-  border-radius: 1em 0em 0em 1em;
+  font-size: xx-small;
+  padding: .2em;
+  border-radius: .7em 0em 0em .7em;
 }
 
 header{
