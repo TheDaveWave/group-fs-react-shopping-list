@@ -1,3 +1,11 @@
 .item-box {
     border: 2px solid #000;
+    border-radius: 5%;
+
+    margin: 2px;
+    height: 120px;
+    width: 125px;
+    max-width: 130px;
+
+    text-align: center;
 }
