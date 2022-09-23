@@ -12,7 +12,7 @@ function ProductForm ({getProducts}) {
             method: 'Post',
             url: '/products/',
             data: {
-                name: name,
+                name: name.charAt(0).toUpperCase() + name.slice(1),
                 quantity: quantity,
                 unit: unit
             }
