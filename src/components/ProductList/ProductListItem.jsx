@@ -30,7 +30,7 @@ function ProductListItem({product, getProducts}) {
     }
 
     return (
-        <div>
+        <div className="item-box">
             <p>{product.name}</p>
             <p>{product.quantity} {product.unit}</p>
             {product.isPurchased ? 
