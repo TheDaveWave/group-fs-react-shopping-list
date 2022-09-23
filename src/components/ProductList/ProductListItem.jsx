@@ -1,4 +1,5 @@
 import axios from "axios";
+import './ProductListItem.css'
 function ProductListItem({product, getProducts}) {
 
     const buyProduct = (productId) => {
