@@ -36,7 +36,7 @@ function ProductListItem({product, getProducts}) {
             <p>{product.quantity} {product.unit}</p>
             {product.isPurchased ? 
             <div>Purchased</div> : 
-            <div>
+            <div className="btn-box">
                 <button className="list-btn" onClick={() => buyProduct(product.id)}>{'\u2713'}</button>
                 <button className="list-btn" onClick={() => removeProduct(product.id)}>X</button>
             </div>}

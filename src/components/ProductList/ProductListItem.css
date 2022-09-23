@@ -17,6 +17,14 @@
     box-shadow: 2px 2px 2px 0 grey;
     border-color: #004bb9;
     border-width: 2px;
+    font-weight: bold;
+}
+
+.btn-box{
+    margin: 0 auto;
+    max-width: 100px;
+    padding-top: 4px;
+    border-top: 2px solid #004bb9;
 }
 
 .list-btn {
@@ -31,4 +39,5 @@
 
 .list-btn:hover {
     background-color: #ffde3f;
+    box-shadow: 1px 1px 1px 0 grey;
 }
