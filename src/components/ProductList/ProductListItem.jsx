@@ -1,4 +1,20 @@
-function ProductListItem({product}) {
+import axios from "axios";
+function ProductListItem({product, getProducts}) {
+
+    const buyProduct = (productId) => {
+        console.log('updating isPurchased');
+        axios({
+            method: 'PUT',
+            url: `/products/purchase/${productId}`
+        })
+        .then(() => {
+            getProducts();
+        })
+        .catch(err => {
+            console.log('Error in purchasing', err);
+        });
+    }
+
     return (
         <div>
             <p>{product.name}</p>
@@ -6,7 +22,7 @@ function ProductListItem({product}) {
             {product.isPurchased ? 
             <div>Purchased</div> : 
             <div>
-                <button>Buy</button>
+                <button onClick={() => buyProduct(product.id)}>Buy</button>
                 <button>Remove</button>
             </div>}
         </div>
