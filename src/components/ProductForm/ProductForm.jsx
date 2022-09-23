@@ -37,11 +37,11 @@ function ProductForm ({getProducts}) {
             <div id="productForm">
                 <form onSubmit={addProduct}>
                     <label htmlFor="nameIn">Product Name:</label>
-                    <input placeholder ="Oreos" id="nameIn" type ="text" value={name} onChange = {event => setName(event.target.value)} required/>
+                    <input id="nameIn" type ="text" value={name} onChange = {event => setName(event.target.value)} required/>
                     <label htmlFor="quantityIn">Quantity:</label>
-                    <input placeholder="15" id="quantityIn" value={quantity} type="number" onChange ={ event => setQuantity(event.target.value)}/>
+                    <input id="quantityIn" value={quantity} type="number" onChange ={ event => setQuantity(event.target.value)}/>
                     <label htmlFor="unitIn">Unit:</label>
-                    <input placeholder="Sleeves" id="unitIn" value={unit} type="text" onChange={event => setUnit(event.target.value)}/>
+                    <input id="unitIn" value={unit} type="text" onChange={event => setUnit(event.target.value)}/>
                     <button >Add Product</button>
                 </form>
             </div>
