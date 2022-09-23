@@ -34,7 +34,7 @@ function App() {
     return (
         <div className="App">
             <Header />
-            <ProductForm/>
+            <ProductForm getProducts={getProducts}/>
             <ProductList productList={productList} getProducts={getProducts}/>
         </div>
     );

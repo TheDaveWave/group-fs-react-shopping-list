@@ -7,7 +7,7 @@ function ProductList ({productList, getProducts}) {
         axios.delete('/products/clear')
         .then(() => {
             console.log('products cleared');
-            getProducts();
+            getProducts(); //prop from app.jsx
         })
         .catch(err => {
             console.log('Error in clearing list', err);
@@ -19,7 +19,7 @@ function ProductList ({productList, getProducts}) {
         axios.put('/products/reset')
         .then(() => {
             console.log('Purchases reset!');
-            getProducts();
+            getProducts(); //prop from app.jsx
         })
         .catch(err => {
             console.log('Error in resetting purchases', err);
@@ -32,7 +32,11 @@ function ProductList ({productList, getProducts}) {
             <button onClick={() => resetPurchased()}>Reset</button>
             <button onClick={() => clearList()}>Clear</button>
             {productList.map( product => (
-                <ProductListItem key={product.id} product={product}/>
+                <ProductListItem 
+                    key={product.id} 
+                    product={product}
+                    getProducts={getProducts}
+                />
             ))}
         </>
     );
