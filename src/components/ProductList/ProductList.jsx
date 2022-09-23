@@ -1,5 +1,6 @@
 import axios from "axios";
 import ProductListItem from "./ProductListItem";
+import './ProductList.css'
 
 function ProductList ({productList, getProducts}) {
     // clear product list.
