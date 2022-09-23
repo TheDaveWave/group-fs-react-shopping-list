@@ -11,6 +11,21 @@
     overflow-wrap: break-word;
 }
 
+.bought-box{
+    pointer-events: none;
+
+    border: 1px solid #000;
+    border-radius: 5%;
+
+    margin: 5px;
+    min-height: 120px;
+    min-width: 125px;
+    max-width: 130px;
+
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
 .item-box:hover {
     transform: translate(-3px, -3px);
     transition: 0.3s;

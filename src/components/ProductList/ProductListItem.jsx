@@ -1,4 +1,5 @@
 import axios from "axios";
+import { css } from "jquery";
 import './ProductListItem.css'
 function ProductListItem({product, getProducts}) {
 
@@ -31,7 +32,7 @@ function ProductListItem({product, getProducts}) {
     }
 
     return (
-        <div className="item-box">
+        <div className={product.isPurchased ? 'bought-box' : 'item-box'}>
             <p>{product.name}</p>
             <p>{product.quantity} {product.unit}</p>
             {product.isPurchased ? 
