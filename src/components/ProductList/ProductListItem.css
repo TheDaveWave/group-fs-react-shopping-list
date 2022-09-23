@@ -8,15 +8,27 @@
     max-width: 130px;
 
     text-align: center;
+    overflow-wrap: break-word;
 }
 
 .item-box:hover {
     transform: translate(-3px, -3px);
+    transition: 0.3s;
     box-shadow: 2px 2px 2px 0 grey;
+    border-color: #004bb9;
+    border-width: 2px;
 }
 
 .list-btn {
     width: 26px;
     height: 22px;
     margin: 0 10px;
+    background-color: #004bb9;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+}
+
+.list-btn:hover {
+    background-color: #ffde3f;
 }
